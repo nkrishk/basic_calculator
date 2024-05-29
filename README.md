@@ -8,7 +8,7 @@ gRPC API service implementation for a basic calculator features using python3
 ## command to compile the .proto file
 
 ```shell
-python -m grpc_tools.protoc -I. --python_out=. --grpc_python_out=. calculator.proto
+python3 -m grpc_tools.protoc -I. --python_out=. --grpc_python_out=. calculator.proto
 ```
 
 This will generate two files: `calculator_pb2.py` and `calculator_pb2_grpc.py`.
