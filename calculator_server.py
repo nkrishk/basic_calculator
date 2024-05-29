@@ -27,7 +27,6 @@ class CalculatorServicer(calculator_pb2_grpc.CalculatorServicer):
 
 def serve():
     parser = argparse.ArgumentParser(description='gRPC API for basic calculator')
-    # parser.add_argument('--port', required=True, type=int, action='store_true', help='gRPC server port number')
     parser.add_argument('--port', required=True, type=int)
     args = parser.parse_args()
     server = grpc.server(futures.ThreadPoolExecutor(max_workers=10))
