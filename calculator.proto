@@ -10,6 +10,7 @@ service Calculator {
   rpc Subtract (TwoNumbers) returns (Result);
   // Sends a request with two numbers and receives their quotient.
   rpc Divide (TwoNumbers) returns (Result);
+   // Sends a request with two numbers and receives their product.
   rpc Multiply (TwoNumbers) returns (Result);
 }
 
